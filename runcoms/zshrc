@@ -14,4 +14,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zsh_aliases" ]]; then
   source "${ZDOTDIR:-$HOME}/.zsh_aliases"
 fi
 
+path+="$HOME/.local/bin"
+
 # Customize to your needs...
