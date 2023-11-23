@@ -9,11 +9,13 @@ fi
 
 # Source .zsh_wsl
 
-# Source .zsh_aliases
-if [[ -s "${ZDOTDIR:-$HOME}/.zsh_aliases" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zsh_aliases"
-fi
+# Aliases
+alias gigls='git ls-files -io --exclude-from=.gitignore'
+alias gigrm='git ls-files -io --exclude-from=.gitignore | xargs -d \\n rm -rf'
 
+# Functions
+
+# Path
 path+="$HOME/.local/bin"
 
 # Customize to your needs...
