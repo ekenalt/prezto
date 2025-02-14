@@ -7,7 +7,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Source .zsh_wsl
+
 # Path
 path+="$HOME/.local/bin"
 
-# Customize to your needs...
