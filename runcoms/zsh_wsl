@@ -16,3 +16,7 @@ path+=(
   '/mnt/c/Windows/System32/WindowsPowerShell/v1.0/'
 )
 
+# Variables
+WINHOME=$(wslpath "$(powershell.exe '$env:USERPROFILE')" | tr -d '\r')
+REPOS=$WINHOME/source/repos
+
